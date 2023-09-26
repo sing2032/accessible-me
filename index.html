@@ -8,46 +8,54 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="site-header">
+    <header>
+      <ul class="skip-link">
+        <li><a href="#welcome-banner" aria-label="Skips to welcome banner">Skip to Welcome Banner</a></li>
+        <li><a href="#owner-info" aria-label="Skips to owner information">Skip to Owner's Information</a></li>
+        <li><a href="#contact-form" aria-label="Skips to the contact form">Skip to Contact Form</a></li>
+      </ul>
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#" aria-label="Opens home">Home</a></li>
+          <li><a href="#" aria-label="Opens products">Products</a></li>
+          <li><a href="#" aria-label="Opens reservation">Reservation</a></li>
+          <li><a href="#" aria-label="Opens studio">Studio</a></li>
         </ul>
+      </nav>
+      <img src="https://placekitten.com/1200/900" alt="Photo of a cat" class="banner">
+    </header>
+    <main>
+      <div id="welcome-banner">
+        <h2>Welcome to Jam Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
+      
+      <div id="owner-info" role="complementary">
+        <h2>Meet the owner</h2>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
           <li>Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+        <h2>Address</h2>
         <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
+          Jambox Studios<br>
+          123 Guitar Road,<br>
+          Musicville, Danceistan<br>
           B3T 0L0
         </p>
       </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
+      <div id="contact-form">
+        <h2>Contact Us</h2>
         <form action="thanks.html">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
@@ -58,7 +66,7 @@
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </main>
     <div class="site-footer">
       &copy; 2021 Jam Box Studios
     </div>

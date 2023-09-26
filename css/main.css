@@ -1,17 +1,9 @@
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  font-family: 'Jost', sans-serif;
+  background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  color: #000000;
 }
 
 .container {
@@ -21,10 +13,16 @@ h6 {
 }
 
 img {
-  width: 100%;
+  width: 59%;
+  margin: 0 auto;
+  display: block;
 }
 
-.main-nav ul {
+nav{
+  margin-bottom: 1rem;
+}
+
+nav ul{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -32,12 +30,12 @@ img {
   padding: 0;
 }
 
-.main-nav ul li {
+nav li{
   flex: 1;
   text-align: center;
 }
 
-.main-nav ul li a {
+nav ul li a {
   display: block;
   color: inherit;
   text-decoration: none;
@@ -61,11 +59,35 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   padding: 1rem;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .site-footer {
   padding: 2rem 0;
 }
+
+.skip-link {
+  list-style: none;
+  padding:0;
+  margin-top: 1rem;
+}
+
+.skip-link a{
+  position: absolute;
+  top: -3em;
+  color: black;
+  
+}
+
+.skip-link a:focus{
+  top: 0;
+  
+}
+
+.skip-link a:visited{
+  color: #000000;
+}
+
