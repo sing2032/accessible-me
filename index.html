@@ -10,25 +10,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header>
-      <ul class="skip-link">
+      <ul id="skip-link">
         <li><a href="#welcome-banner" aria-label="Skips to welcome banner">Skip to Welcome Banner</a></li>
         <li><a href="#owner-info" aria-label="Skips to owner information">Skip to Owner's Information</a></li>
         <li><a href="#contact-form" aria-label="Skips to the contact form">Skip to Contact Form</a></li>
       </ul>
-      <h1>Jam Box Studios</h1>
-      <nav>
-        <ul>
-          <li><a href="#" aria-label="Opens home">Home</a></li>
-          <li><a href="#" aria-label="Opens products">Products</a></li>
-          <li><a href="#" aria-label="Opens reservation">Reservation</a></li>
-          <li><a href="#" aria-label="Opens studio">Studio</a></li>
-        </ul>
-      </nav>
+        <h1>Jam Box Studios</h1>
+        <nav>
+          <ul>
+            <li><a href="#" aria-label="Opens home">Home</a></li>
+            <li><a href="#" aria-label="Opens products">Products</a></li>
+            <li><a href="#" aria-label="Opens reservation">Reservation</a></li>
+            <li><a href="#" aria-label="Opens studio">Studio</a></li>
+          </ul>
+        </nav>
+      
       <img src="https://placekitten.com/1200/900" alt="Photo of a cat" class="banner">
     </header>
     <main>
@@ -57,7 +59,7 @@
       <div id="contact-form">
         <h2>Contact Us</h2>
         <form action="index.html" method="get">
-          <label for="fname">Full Name</label>
+          <label for="fname">Name</label>
           <input id="fname" name="fname" type="text" placeholder="Full Name">
 
           <label for="email">Email</label>
@@ -72,9 +74,14 @@
         </form>
       </div>
     </main>
-    <div class="site-footer">
+
+    <div class="top-button"><a href="#skip-link"><span class="material-icons-outlined">
+      expand_less
+      </span></a></div>
+
+    <footer>
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
   </div>
 </body>
 

@@ -65,29 +65,36 @@ form button {
   color: #000000;
 }
 
-.site-footer {
+footer {
   padding: 2rem 0;
+  text-align: center;
+  
 }
 
-.skip-link {
+#skip-link {
   list-style: none;
   padding:0;
   margin-top: 1rem;
 }
 
-.skip-link a{
+#skip-link a{
   position: absolute;
   top: -3em;
   color: black;
   
 }
 
-.skip-link a:focus{
+#skip-link a:focus{
   top: 0;
   
 }
 
-.skip-link a:visited{
+#skip-link a:visited{
   color: #000000;
 }
 
+.top-button{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
