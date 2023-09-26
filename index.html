@@ -47,22 +47,27 @@
           <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h2>Address</h2>
-        <p>
-          Jambox Studios<br>
-          123 Guitar Road,<br>
-          Musicville, Danceistan<br>
-          B3T 0L0
+        <p itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="name">Jambox Studios</span><br>
+          <span itemprop="streetAddress">123 Guitar Road,</span><br>
+          <span itemprop="addressRegion">Musicville, Danceistan</span><br>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </div>
       <div id="contact-form">
         <h2>Contact Us</h2>
-        <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+        <form action="index.html" method="get">
+          <label for="fname">Full Name</label>
+          <input id="fname" name="fname" type="text" placeholder="Full Name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email">
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Subject">
+          
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
