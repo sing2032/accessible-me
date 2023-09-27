@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Jost', sans-serif;
   background-color: rgb(255, 255, 255);
@@ -6,17 +10,39 @@ body {
   color: #000000;
 }
 
+h1, h2{
+  font-family: 'Comic Neue', cursive;
+
+}
+
+h1{
+  text-align: center;
+  margin: 2rem;
+}
+
+hr{
+  border-top:1px dotted black;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-img {
+.banner {
   width: 59%;
   margin: 0 auto;
   display: block;
+  border-radius: 5%;
+  transition: width .60s ease-in-out;
+  
 }
+
+.banner:hover{
+  width: 65%;
+}
+
 
 nav{
   margin-bottom: 1rem;
@@ -42,6 +68,24 @@ nav ul li a {
   font-size: 1.25rem;
 }
 
+nav ul li a:hover {
+  background-color: #9c7b5e;
+  color: white;
+}
+
+nav ul li a:focus {
+  background-color: #9c7b5e;
+  color: white;
+}
+
+nav ul li{
+  border-right: 1px dotted black;
+}
+
+nav ul li:nth-child(4){
+  border: none;
+}
+
 form input,
 form textarea {
   display: block;
@@ -63,7 +107,22 @@ form button {
   padding: 1rem;
   text-transform: uppercase;
   color: #000000;
+  cursor: pointer;
+  border-radius: 10%;
 }
+
+form button:hover{
+  background-color: #9c7b5e;
+  color: rgb(255, 255, 255);
+  border-color: #9c7b5e;
+}
+
+form button:focus{
+  background-color: #9c7b5e;
+  color: rgb(255, 255, 255);
+  border-color: #9c7b5e;
+}
+
 
 footer {
   padding: 2rem 0;
@@ -97,4 +156,25 @@ footer {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  border: 1px solid #c9b7a7;
+  border-radius: 10%;
+  padding: 0.3rem 0.5rem;
+  
 }
+
+.top-button span{
+  font-size: 2rem;
+  color: #9c7b5e;
+}
+
+.top-button:hover span{
+  font-size: 2rem;
+  color: #ffffff;
+  
+}
+
+.top-button:hover{
+  background-color:#c9b7a7 ;
+  border-color: #c9b7a7;
+}
+
